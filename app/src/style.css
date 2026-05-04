@@ -89,9 +89,12 @@ button {
 
 .hero-title-wrap {
   position: relative;
-  display: inline-block;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 14px;
   margin-top: 8px;
   padding: 24px 28px 18px 0;
+  max-width: 100%;
 }
 
 .hero-seal {
@@ -115,13 +118,13 @@ button {
 }
 
 .hero-panel h1 {
-  max-width: 12ch;
+  max-width: min(100%, 8ch);
   font-family: "STSong", "Songti SC", "SimSun", serif;
-  font-size: clamp(3rem, 7vw, 5.35rem);
-  line-height: 1.08;
+  font-size: clamp(2.3rem, 4.8vw, 4rem);
+  line-height: 1.06;
   font-weight: 700;
-  letter-spacing: 0.045em;
-  padding: 24px 28px 20px 34px;
+  letter-spacing: 0.08em;
+  padding: 28px 42px 24px 48px;
   border-radius: 24px;
   background:
     linear-gradient(180deg, rgba(255, 252, 247, 0.95), rgba(244, 236, 221, 0.92)),
@@ -170,6 +173,17 @@ button {
   background-clip: text;
   color: transparent;
   text-shadow: 0 10px 24px rgba(49, 46, 43, 0.06);
+}
+
+.hero-subtitle {
+  margin: 0;
+  max-width: 34rem;
+  padding-left: 18px;
+  font-size: 1.08rem;
+  line-height: 1.75;
+  letter-spacing: 0.04em;
+  color: #5b4d3f;
+  border-left: 2px solid rgba(143, 45, 45, 0.22);
 }
 
 .hero-copy {
@@ -411,14 +425,22 @@ button {
 
   .hero-panel h1 {
     max-width: none;
-    font-size: clamp(2.5rem, 12vw, 4.2rem);
-    line-height: 1.06;
+    font-size: clamp(2rem, 7.8vw, 3rem);
+    line-height: 1.12;
     padding: 22px 18px 18px 22px;
   }
 
   .hero-title-wrap {
     display: block;
     padding-top: 34px;
+  }
+
+  .hero-subtitle {
+    max-width: none;
+    margin-top: 14px;
+    padding-left: 14px;
+    font-size: 1rem;
+    line-height: 1.65;
   }
 
   .hero-seal {

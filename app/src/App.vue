@@ -185,7 +185,8 @@ onBeforeUnmount(() => {
       <p class="eyebrow">Vue To-do Reminder</p>
       <div class="hero-title-wrap">
         <span class="hero-seal">卷一</span>
-        <h1>把待办放进一个会按时提醒你的清爽小工具里</h1>
+        <h1>待办清卷</h1>
+        <p class="hero-subtitle">把待办放进一个会按时提醒你的清爽小工具里</p>
       </div>
       <p class="hero-copy">
         添加标题和截止时间，页面会自动保存，任务到点后会弹出浏览器提醒。

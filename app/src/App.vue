@@ -183,7 +183,10 @@ onBeforeUnmount(() => {
   <main class="page-shell">
     <section class="hero-panel">
       <p class="eyebrow">Vue To-do Reminder</p>
-      <h1>把待办放进一个会按时提醒你的清爽小工具里</h1>
+      <div class="hero-title-wrap">
+        <span class="hero-seal">卷一</span>
+        <h1>把待办放进一个会按时提醒你的清爽小工具里</h1>
+      </div>
       <p class="hero-copy">
         添加标题和截止时间，页面会自动保存，任务到点后会弹出浏览器提醒。
       </p>

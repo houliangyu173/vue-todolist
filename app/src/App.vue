@@ -182,6 +182,7 @@ onBeforeUnmount(() => {
 <template>
   <main class="page-shell">
     <section class="hero-panel">
+      <div class="hero-glow" aria-hidden="true"></div>
       <p class="eyebrow">Vue To-do Reminder</p>
       <div class="hero-title-wrap">
         <span class="hero-seal">卷一</span>
